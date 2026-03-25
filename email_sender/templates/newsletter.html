@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Newsletter</title></head>
+<body style="margin:0;padding:0;background-color:#f4f4f4;font-family:Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f4f4;padding:40px 0;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#0f172a;padding:28px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p style="margin:0;color:#94a3b8;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;">Monthly Digest</p>
+                    <h1 style="margin:4px 0 0;color:#ffffff;font-size:24px;">The Example</h1>
+                  </td>
+                  <td align="right" valign="middle">
+                    <span style="background-color:#334155;color:#94a3b8;font-size:12px;padding:6px 12px;border-radius:20px;">${month}</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Greeting -->
+          <tr>
+            <td style="padding:32px 40px 0;">
+              <p style="margin:0;color:#374151;font-size:15px;line-height:1.6;">
+                Hey <strong>${name}</strong>, here's your monthly roundup of the most interesting reads from the tech world. Grab a coffee ☕ and enjoy.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding:24px 40px 0;">
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0;">
+            </td>
+          </tr>
+
+          <!-- Article 1 -->
+          <tr>
+            <td style="padding:28px 40px 0;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f8fafc;border-radius:6px;padding:24px;border-left:4px solid #6366f1;">
+                <tr>
+                  <td style="padding:0 0 0 0;">
+                    <p style="margin:0 0 4px;font-size:11px;color:#6366f1;text-transform:uppercase;letter-spacing:1px;font-weight:bold;">Top Story</p>
+                    <h2 style="margin:0 0 10px;color:#111827;font-size:18px;">${article1_title}</h2>
+                    <p style="margin:0;color:#6b7280;font-size:14px;line-height:1.6;">${article1_summary}</p>
+                    <a href="#" style="display:inline-block;margin-top:14px;color:#6366f1;font-size:13px;font-weight:bold;text-decoration:none;">Read more &rarr;</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Article 2 -->
+          <tr>
+            <td style="padding:16px 40px 0;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f8fafc;border-radius:6px;padding:24px;border-left:4px solid #10b981;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px;font-size:11px;color:#10b981;text-transform:uppercase;letter-spacing:1px;font-weight:bold;">Tutorial</p>
+                    <h2 style="margin:0 0 10px;color:#111827;font-size:18px;">${article2_title}</h2>
+                    <p style="margin:0;color:#6b7280;font-size:14px;line-height:1.6;">${article2_summary}</p>
+                    <a href="#" style="display:inline-block;margin-top:14px;color:#10b981;font-size:13px;font-weight:bold;text-decoration:none;">Read more &rarr;</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Quick Tips Box -->
+          <tr>
+            <td style="padding:28px 40px 0;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#fefce8;border-radius:6px;padding:20px 24px;border:1px solid #fde68a;">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 8px;color:#92400e;font-size:13px;font-weight:bold;">&#128161; Quick Tips This Month</p>
+                    <ul style="margin:0;padding-left:18px;color:#78350f;font-size:13px;line-height:1.8;">
+                      <li>Use <code style="background:#fde68a;padding:1px 4px;border-radius:3px;">git stash pop</code> to restore uncommitted changes quickly.</li>
+                      <li>Python's <code style="background:#fde68a;padding:1px 4px;border-radius:3px;">pathlib</code> is cleaner than <code style="background:#fde68a;padding:1px 4px;border-radius:3px;">os.path</code> — give it a try.</li>
+                      <li>Always lint your Dockerfiles with <code style="background:#fde68a;padding:1px 4px;border-radius:3px;">hadolint</code> before shipping.</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:32px 40px 28px;text-align:center;border-top:1px solid #e5e7eb;margin-top:28px;">
+              <p style="margin:0;font-size:12px;color:#9ca3af;">You're receiving this because you subscribed to The Example.</p>
+              <p style="margin:6px 0 0;font-size:12px;color:#9ca3af;">
+                <a href="${unsubscribe_url}" style="color:#6366f1;text-decoration:none;">Unsubscribe</a> &nbsp;&bull;&nbsp; &copy; 2026 The Example
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
