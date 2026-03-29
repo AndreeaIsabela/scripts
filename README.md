@@ -12,6 +12,7 @@ A collection of reusable Python utility scripts.
 |---|---|
 | [`image_convertor/`](./image_convertor/) | Convert images between formats (PNG, JPEG, WebP, etc.) |
 | [`email_sender/`](./email_sender/) | Send HTML emails from the CLI using customisable templates |
+| [`password_checker/`](./password_checker/) | Check passwords against known data breaches via the HIBP API |
 
 ## Getting Started
 
