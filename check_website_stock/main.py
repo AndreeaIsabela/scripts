@@ -29,4 +29,4 @@ if __name__ == "__main__":
     for item in results:
       if item["in_stock"]:
         message = f"In stock: {item['name']}\n{item['url']}"
-        send_message(to, message)
+        send_message(to, message, whatsapp=True)

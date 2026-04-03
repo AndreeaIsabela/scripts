@@ -1,15 +1,9 @@
-import os
 from login import login
 
 # Selectors, update these if the site's HTML changes
 PRODUCT_NAME_SELECTOR = "h1.product_title.entry-title"
 IN_STOCK_SELECTOR = ".single_add_to_cart_button.button:not(.disabled):not([disabled])"
 OUT_OF_STOCK_SELECTOR = "p.stock.out-of-stock"
-def _ensure_logged_in(sb, url):
-  if sb.is_text_visible("register and login to shop"):
-    print("Session lost retry log in...")
-    login(sb)
-    sb.open(url)
 
 
 def check_product_availability(sb, product_urls):
@@ -27,7 +21,6 @@ def check_product_availability(sb, product_urls):
 
   for url in product_urls:
     sb.open(url)
-    _ensure_logged_in(sb, url)
 
     name = url
     if sb.is_element_visible(PRODUCT_NAME_SELECTOR):
